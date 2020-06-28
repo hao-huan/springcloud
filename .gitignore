@@ -14,4 +14,8 @@ eureka-client/.gitignore
 eureka-security-server/.gitignore
 eureka-server/.gitignore
 feign-service/.gitignore
+hystrix-dashboard/.gitignore
+hystrix-service/.gitignore
+nacos-config-client/.gitignore
+nacos-ribbon-service/.gitignore
 
