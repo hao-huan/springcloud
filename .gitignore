@@ -1,0 +1,6 @@
+33
+admin-client/.gitignore
+admin-security-server/.gitignore
+admin-server/.gitignore
+api-gateway/.gitignore
+base/target/
