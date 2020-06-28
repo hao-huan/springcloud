@@ -1,0 +1,24 @@
+server:
+  port: 9202
+service-url:
+  user-service: http://localhost:8201
+spring:
+  cloud:
+    gateway:
+      routes:
+        - id: path_route #路由的ID
+          uri: ${service-url.user-service}/user/{id} #匹配后路由地址
+          predicates: # 断言，路径相匹配的进行路由
+            - Path=/user/{id}
+      discovery:
+         locator:
+            enabled: true
+            lowerCaseServiceId: true
+            filters:
+              - StripPrefix=1
+    nacos:
+      discovery:
+        server-addr: localhost:8848 #配置Nacos地址
+  application:
+     name: api-gateway
+
