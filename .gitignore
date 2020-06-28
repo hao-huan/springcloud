@@ -9,4 +9,9 @@ config-security-server/.gitignore
 config-server/.gitignore
 consul-config-client/.gitignore
 consul-ribbon-service/.gitignore
+consul-user-service/.gitignore
+eureka-client/.gitignore
+eureka-security-server/.gitignore
+eureka-server/.gitignore
+feign-service/.gitignore
 
