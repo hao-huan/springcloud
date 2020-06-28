@@ -1,3 +1,4 @@
 33
 */.gitignore
 */target/
+*/*.swp
