@@ -1,0 +1,23 @@
+server:
+  port: 8182
+spring:
+  application:
+    name: seata-account-service
+  cloud:
+    alibaba:
+      seata:
+        tx-service-group: fsp_tx_group
+    nacos:
+      discovery:
+        server-addr: 192.168.0.112:8848
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    password: 123
+    url: jdbc:mysql://127.0.0.1:3306/seat-account
+    username: root
+logging:
+  level:
+    io:
+      seata: info
+mybatis:
+  mapperLocations: classpath:mapper/*.xml
