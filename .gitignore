@@ -4,3 +4,9 @@ admin-security-server/.gitignore
 admin-server/.gitignore
 api-gateway/.gitignore
 base/target/
+config-client/.gitignore
+config-security-server/.gitignore
+config-server/.gitignore
+consul-config-client/.gitignore
+consul-ribbon-service/.gitignore
+
