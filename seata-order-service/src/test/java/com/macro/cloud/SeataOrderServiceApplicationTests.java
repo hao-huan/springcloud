@@ -37,7 +37,7 @@ public class SeataOrderServiceApplicationTests {
 		order.setCount(2);
 		order.setMoney(BigDecimal.TEN);
 		order.setStatus(2);
-		order.setUserId(2L);
+		order.setUserId(1L);
 		order.setProductId(3L);
 		this.orderService.create(order);
 	}

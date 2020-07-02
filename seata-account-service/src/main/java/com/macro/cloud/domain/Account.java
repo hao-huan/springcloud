@@ -1,11 +1,12 @@
 package com.macro.cloud.domain;
 
-import lombok.Data;
-
+import java.io.Serializable;
 import java.math.BigDecimal;
 
+import lombok.Data;
+
 @Data
-public class Account {
+public class Account implements Serializable{
 
     private Long id;
 

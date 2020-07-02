@@ -15,7 +15,7 @@ import org.springframework.core.io.support.PathMatchingResourcePatternResolver;
 
 import javax.sql.DataSource;
 
-@Configuration
+//@Configuration
 public class DataSourceProxyConfig {
 
     @Value("${mybatis.mapperLocations}")

@@ -14,4 +14,10 @@
             used    = used + #{money}
         WHERE user_id = #{userId};
     </update>
+
+    <!--
+    <select id="selectById" resultType="com.macro.cloud.domain.Account">
+	    select id, user_id as userId, total, used, residue from account where id=#{id};
+	    </select>
+    -->
 </mapper>

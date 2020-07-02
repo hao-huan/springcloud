@@ -1,7 +1,13 @@
 package com.macro.cloud.service;
 
+import com.baomidou.mybatisplus.extension.service.IService;
 
-public interface StorageService {
+import com.macro.cloud.domain.Storage;
+
+/**
+ *
+ */
+public interface StorageService extends IService<Storage>{
     /**
      * 扣减库存
      */

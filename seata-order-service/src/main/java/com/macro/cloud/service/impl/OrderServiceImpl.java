@@ -1,22 +1,28 @@
 package com.macro.cloud.service.impl;
 
-import com.macro.cloud.dao.OrderDao;
-import com.macro.cloud.domain.Order;
-import com.macro.cloud.account.feign.service.AccountService;
-import com.macro.cloud.service.OrderService;
-import com.macro.cloud.StorageService;
+import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
+
 import io.seata.spring.annotation.GlobalTransactional;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
 import org.springframework.beans.factory.annotation.Autowired;
+
 import org.springframework.stereotype.Service;
+
+import com.macro.cloud.StorageService;
+import com.macro.cloud.account.feign.service.AccountService;
+import com.macro.cloud.dao.OrderDao;
+import com.macro.cloud.domain.Order;
+import com.macro.cloud.service.OrderService;
 
 /**
  * 订单业务实现类
  * Created by macro on 2019/11/11.
  */
 @Service
-public class OrderServiceImpl implements OrderService {
+public class OrderServiceImpl extends ServiceImpl<OrderDao, Order>  implements OrderService {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(OrderServiceImpl.class);
 
@@ -53,5 +59,7 @@ public class OrderServiceImpl implements OrderService {
         LOGGER.info("------->order-service中修改订单状态结束");
 
         LOGGER.info("------->下单结束");
+	orderDao.selectById(1L);
+	
     }
 }

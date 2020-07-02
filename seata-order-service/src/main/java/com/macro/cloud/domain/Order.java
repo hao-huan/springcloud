@@ -1,11 +1,14 @@
 package com.macro.cloud.domain;
 
 
-import lombok.Data;
+import com.baomidou.mybatisplus.annotation.TableName;
 
 import java.math.BigDecimal;
 
+import lombok.Data;
+
 @Data
+@TableName("`order`")
 public class Order {
 
     private Long id;

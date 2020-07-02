@@ -62,6 +62,8 @@
 	</dependency>
 
 
+
+
         <!--feign-->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
@@ -76,11 +78,25 @@
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
-        <dependency>
+
+	<!--
+        <dependency>		
             <groupId>org.mybatis.spring.boot</groupId>
             <artifactId>mybatis-spring-boot-starter</artifactId>
             <version>${mybatis-spring-boot-starter.version}</version>
-        </dependency>
+		</dependency>
+	-->
+
+
+		<!--
+		<dependency>
+			<groupId>com.baomidou</groupId>
+			<artifactId>mybatisplus-spring-boot-starter</artifactId>
+			<version>3.3.1</version>
+			</dependency>
+		-->
+
+
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
@@ -96,6 +112,23 @@
             <artifactId>lombok</artifactId>
             <version>${lombok.version}</version>
         </dependency>
+
+
+	<!--
+					<dependency>
+					<groupId> org.mybatis.spring.boot </groupId>
+					<artifactId> mybatis-spring-boot-autoconfigure</artifactId>
+					<version>${mybatis-spring-boot-starter.version}</version>
+		</dependency>
+	-->
+
+
+		 <dependency>                                                       
+	              <groupId>com.baomidou</groupId>                         
+        	      <artifactId>mybatis-plus-boot-starter</artifactId>   
+	              <version>3.3.1</version>                                  
+		</dependency>                                                    
+
 
     </dependencies>
 
